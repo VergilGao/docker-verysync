@@ -7,5 +7,6 @@ mkdir -p \
 
 # permissions
 chown -R abc:abc \
+        /root \
         /data \
         /verysync
