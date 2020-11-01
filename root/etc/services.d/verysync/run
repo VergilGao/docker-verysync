@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv sh
+
+# set umask
+UMASK_SET=${UMASK_SET:-022}
+umask "$UMASK_SET"
+
+exec s6-setuidgid abc /app/verysync -gui-address "0.0.0.0:10808" -home /verysync

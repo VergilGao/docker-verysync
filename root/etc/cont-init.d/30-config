@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+
+# create directories
+mkdir -p \
+        /data \
+        /verysync
+
+# permissions
+chown -R abc:abc \
+        /data \
+        /verysync
