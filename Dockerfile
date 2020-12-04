@@ -1,9 +1,8 @@
-FROM lsiobase/alpine:3.10
+FROM lsiobase/alpine:3.12
 LABEL maintainer="VergilGao"
 
 ARG GLIBC_VERSION
 ARG VERYSYNC_VERSION
-ARG BUILD_DATE
 
 RUN \
     cd /tmp &&\
